@@ -1,0 +1,35 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+
+@import "_vars.scss";
+
+html {
+    height: 100%; overflow:auto;
+}
+
+body {
+    background: $background;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    font-size: 18px;
+
+    height: 100%;
+
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
