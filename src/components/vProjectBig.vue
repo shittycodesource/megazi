@@ -107,7 +107,9 @@ export default {
             return;
         }   
 
-        this.isMounted = true;
+        setTimeout(() => {
+            this.isMounted = true
+        }, 1000);
     },
 }
 </script>
@@ -116,8 +118,8 @@ export default {
     .project--big {
         max-width: 100%;
         min-width: unset;
+        //width: fit-content;
         width: 100%;
-
 
         max-height: 800px;
         max-width: 750px;
@@ -275,6 +277,8 @@ export default {
             &::before {
                 opacity: 1;
             }   
+
+            width: fit-content;
         }   
     }
 </style>
